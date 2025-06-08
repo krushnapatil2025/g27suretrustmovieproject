@@ -14,6 +14,7 @@ const Navbar = () => {
         <NavLink
         to='/favorites'
         >Favorites ❤️{favorites.length}</NavLink>
+        <NavLink to="/todo" className={({ isActive }) => isActive ? "font-bold text-yellow-700" : ""}>Todo</NavLink>
       </nav>
     </div>
   );

@@ -8,7 +8,7 @@ import MovieDetail from "./pages/MovieDetail";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
 import Favorites from "./pages/Favorites";
-
+import Todo from "./pages/Todo";
 function App() {
   return (
     <>
@@ -23,6 +23,7 @@ function App() {
           path="*"
           element={<h1 className="text-2xl m-4">404 Not Found</h1>}
         />
+        <Route path="/todo" element={<Todo/>} />
       </Routes>
       </Provider>
     </>
